@@ -1,0 +1,20 @@
+site_name: My Docs
+
+theme:
+  name: material
+  language: zh
+
+  # 提供切换 日间 / 夜间 模式的选项
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode

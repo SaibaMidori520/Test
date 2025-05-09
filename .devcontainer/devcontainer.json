@@ -1,0 +1,11 @@
+{
+    "name": "MkDocs Environment",
+    "build": { "dockerfile": "Dockerfile" },
+    "customizations": {
+        "vscode": {
+            "extensions": ["yzhang.markdown-all-in-one"]
+        }
+    },
+    "postCreateCommand": "python3 -m venv .venv && . .venv/bin/activate && pip install mkdocs mkdocs-material",
+    "postAttachCommand": "mkdocs serve -a 0.0.0.0:8000"
+}
